@@ -31,19 +31,19 @@ studentForm.addEventListener("submit", function (e) {
       isMarried: this.isMarried.checked,
       position: this.position.value,
       salary: this.salary.value,
-
     };
     if (selected === null) {
       students.push(student);
     } else {
       students[selected] = student;
     }
+    getStudents()
     bootstrap.Modal.getInstance(studentModal).hide();
     this.reset();
   } else {
     this.classList.add("was-validated");
   }
-  localStorage.setItem(STUDENTS, JSON.stringify(students));
+  localStorage.setItem("students", JSON.stringify(students));
   getStudents();
 });
 
@@ -80,10 +80,13 @@ function getStudents() {
       student.lastName.toLowerCase().includes(search)
   );
 
+  
   if (regions !== "all") {
     results = results.filter((student) => student.group === regions);
   }
-
+  
+  console.log(results)
+  
   studentsTableBody.innerHTML = "";
 
   if (results.length !== 0) {

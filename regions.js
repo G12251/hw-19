@@ -1,1 +1,1 @@
-const address= [ "Andijan Region", "Bukhara Region ", "Fergana Region", "Jizzakh Region", "Xorazm Region", "Namangan Region", "Navoiy Region", "Qashqadaryo Region", "Samarqand Region", "Sirdaryo Region", "Surxondaryo Region", "Tashkent Region", "Tashkent", "Karakalpakstan"];
+const  address= [ "Andijan Region", "Bukhara Region ", "Fergana Region", "Jizzakh Region", "Xorazm Region", "Namangan Region", "Navoiy Region", "Qashqadaryo Region", "Samarqand Region", "Sirdaryo Region", "Surxondaryo Region", "Tashkent Region", "Tashkent", "Karakalpakstan"];
